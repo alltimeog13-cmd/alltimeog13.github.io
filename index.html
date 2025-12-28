@@ -18,7 +18,7 @@
   <style>
     body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#0b0b0f;color:#fff}
     a{text-decoration:none}
-    .hero{position:relative;min-height:80vh;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),url('ALL_TIME_OG_under_1mb.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px}
+    .hero{position:relative;min-height:80vh;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),url('ALL_TIME_OG_under_1mb.jpg') center/cover no-repeat,display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px}
     .hero h1{font-size:3.8rem;letter-spacing:4px;text-shadow:0 0 30px #ff9f1a}
     .hero p{font-size:1.2rem;opacity:.9}
     .cta{margin-top:25px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
@@ -41,6 +41,10 @@
   </style>
 </head>
 <body>
+
+  <!-- ANIMATED GAMING BACKGROUND -->
+  <div style="position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at top,#1a1a2e,#000),linear-gradient(120deg,rgba(255,159,26,.15),transparent);animation:bgMove 20s linear infinite"></div>
+  <style>@keyframes bgMove{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)}}</style>
 
   <!-- HERO SECTION -->
   <section class="hero">
@@ -82,8 +86,9 @@
 
     <!-- ALL VIDEOS -->
     <section class="section videos">
-      <h2>📺 All Uploads</h2>
-      <iframe src="https://www.youtube.com/embed/videoseries?list=UUOU7rOmNaGLtZWr_NZVvUEw"></iframe>
+      <h2>📺 All YouTube Uploads (ALL Time OG)</h2>
+      <!-- USER UPLOADS EMBED (NO API, GUARANTEED YOUR VIDEOS) -->
+      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=alltimeog13"></iframe>
     </section>
 
     <!-- SOCIAL ICONS -->
